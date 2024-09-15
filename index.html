@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Nutrition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <header class="header-nav">
+        <div class="container">
+            <a href="#"><div id="empresa">
+                <img src="./assets/images/LOGO.jpg" alt="logo Left-Nutrition" height="50px">
+                <h1>Left Nutrition</h1>
+            </div></a>
+            
+			<input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle-label">☰</label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenido a Left Nutrition</h2>
+            <p>Mejora tu salud con nuestros planes de nutrición personalizados.
+			Puedes empezar buscando alguna de nuestras <a href="#recetas" class="btn-primary">recetas</a></p>
+            
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Left Nutrition</h2>
+            <div id="sobre-nosotros">
+                <article class="sobre-nosotros">
+                    <img src="./assets/images/nutri.jpg" alt="Foto de Marina, la nutricionista de Left Nutrition" id="foto-nutri">
+                    <blockquote>Hola!👋 Soy Marina Cortada, creadora de Left Nutrition.</blockquote>
+                </article>                
+                
+                <p>Left.nutrition es un proyecto de nutrición que cree en los cambios, en los hábitos saludables y en el constante aprendizaje.
+                La alimentación influye en el equilibrio de nuestro cuerpo, una gestión consciente de ella conjuntamente con el ejercicio físico son una herramienta imprescindible para conseguir una calidad de vida óptima. Left.nutrition nació para ayudar a aquellos que opten por esta filosofía de vida.</p>
+            </div>			
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-item">
+                <h3>Plan de Nutrición Personalizado</h3>
+                <p>Te ayudamos a alcanzar tus metas de salud con un plan adaptado a tus necesidades.</p>
+            </div>
+            <div class="service-item">
+                <h3>Consultas Online</h3>
+                <p>Consulta con nuestros expertos desde la comodidad de tu hogar.</p>
+            </div>
+            <div class="service-item">
+                <h3>Programas de Educación Nutricional</h3>
+                <p>Aprende sobre nutrición y mejora tus hábitos alimenticios.</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="recetas" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="service-item">
+                <h3>Pide más información o aclara tus dudas mandándonos un email o escribiéndonos a: </h3>
+                
+                <div class="datos-contacto">
+                    <div class="mail">
+                        <img class="logo-contacto" src="./assets/images/email.svg" alt="email logo" height="22px"> 
+                        <span>cortada.marina@gmail.com</span> 
+                    </div>
+                    <div class="telf">
+                        <img  class="logo-contacto" src="./assets/images/whatsapp.svg" alt="whatsapp logo"  height="18px" width="20px"> 
+                        <span>+34 648 01 59 03</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="recetas" class="contact">
+        <div class="container">
+            <h2>Recetas</h2>
+            <header class="recipe-container">
+                <input type="text" id="search" placeholder="...qué estás buscando?">
+            </header>
+            
+            <main>
+                <div id="recipe-container"></div>
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Left Nutrition. Todos los derechos reservados.</p>
+            <p><span>web by <a href="https://www.linkedin.com/in/asiermd/">mdasier</a></span></p>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
