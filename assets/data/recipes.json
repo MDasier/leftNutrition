@@ -1,0 +1,80 @@
+[
+  {
+    "id": 0,
+    "receta": "Pollo con verduras",
+    "descripcion": "Un plato sencillo y sabroso que vale para cualquier época del año. Utilizar máximo 2 cucharadas soperas de aceite para saltear las verduras y hacer el pollo. Salteamos con 1 chorro de salsa de soja verduras (1 cebolla, 1 pimiento rojo, 1 pimiento verde y 2 zanahorias) previamente cortadas en juliana hasta dejarlas al punto que nos guste y pasamos el pollo (300 g) por la plancha. Servimos en un plato las verduras de base y el pollo encima. Listo!",
+    "dificultad": "medio",
+    "tiempo": 30,
+    "calorias": 400,
+    "buscar": "pollo con verduras plancha aceite oliva virgen extra pimiento cebolla ajo gluten free sal soja",
+    "personas": "2",
+    "tipo": "low carb",
+    "ingredientes": "Pollo (300gr), 1 cebolla, 1 pimiento rojo, 1 pimiento verde y 2 zanahorias, aceite de oliva, chorro de soja, pizca de sal."
+  },
+  {
+    "id": 1,
+    "receta": "Ensalada cobb",
+    "descripcion": "Ensalada completa para utilizar como plato único. Lavar y picar 1 lechuga romana. Picar 1 aguacate pequeño. Cocer 2 huevos y una vez cocidos trocearlos pequeños. Hacer a la plancha 3 tiras de bacon y trocear. Trocear 1 tomate mediano o 8 cherrys. Hacer a la plancha 1 filete de pavo y trocear. Trocear queso de burgos, tarrina 70 g. Colocar en una bandeja la lechuga, ir colocando encima de la lechuga los ingredientes formando hileras. Una vez colocado todo mezclar en 1 tarro 1 cucharada de mostaza de Dijón, 1 pizca de sal, 2 cucharadas soperas de aceite, 2 cucharas soperas de vinagre de módena y 2 cucharadas soperas de agua. Remover bien la vinagreta y echar por encima de la ensalada.",
+    "dificultad": "fácil",
+    "tiempo": 20,
+    "calorias": 580,
+    "buscar": "low carb gluten free pavo cobb aceite de oliva virgen extra lechuga queso fresco burgos ensalada tomate plancha bacon aguacate huevo",
+    "personas": "2",
+    "tipo": "low carb, gluten free"
+  },
+  {
+    "id": 2,
+    "receta": "Crema de puerros y almendras",
+    "descripcion": "Lavamos y picamos 3 puerros, pelamos y picamos 1 patata grande y 3 ajos, lo sofreímos todo con 1 cucharada de aceite de oliva. Añadimos 100 g de almendras en polvo y lo rehogamos con las verduras previamente sofritas. Lo cubrimos de agua y dejamos que hierva 30 minutos. Lo trituramos y lo pasamos por un colador para que quede una textura fina.",
+    "dificultad": "medio",
+    "tiempo": 45,
+    "calorias": 600,
+    "buscar": "crema low carb gluten free aceite de oliva virgen extra puerros patata ajos almendras",
+    "personas": "2",
+    "tipo": "low carb, gluten free"
+  },
+  {
+    "id": 3,
+    "receta": "Falsa quiche de verduras",
+    "descripcion": "Picamos 1 calabacín y 1 cebolla a cuadraditos pequeños y sofreímos con 1 cucharada sopera de aceite de oliva. Sofreímos a parte 1 bandeja de 300 g de champiñones y lo mezclamos con el calabacín y la cebolla. Batimos 4 huevos y lo mezclamos con 1/2 vaso de bebida de soja. En una fuente de horno (previamente untada con unas gotas de aceite para que no se pegue la mezcla) vertemos los huevos con la leche y seguidamente las verduras, lo mezclamos todo bien con una espátula. Añadimos 100 g de mozzarella rallada y también mezclamos. Precalentamos el horno a 180 grados y cuando esté caliente introducimos la fuente de horno con la mezcla durante aproximadamente 30 minutos, ir controlando y pinchando con un palillo hasta que salga limpio.",
+    "dificultad": "medio",
+    "tiempo": 45,
+    "calorias": 470,
+    "buscar": "falsa quiche verduras low carb gluten free aceite de oliva virgen extra calabacín cebolla champiñones queso mozzarella rallado huevos bebida soja sal pimienta",
+    "personas": "3",
+    "tipo": "low carb, gluten free"
+  },
+  {
+    "id": 4,
+    "receta": "Rollitos de pollo rellenos de verduras a la mostaza",
+    "descripcion": "Picamos 1 pimiento verde, 1 zanahoria y 1 cebolla a tiras y sofreímos con 1 cucharada sopera de aceite de oliva. En una bandeja de horno (previamente untada con un poco de aceite) extendemos 450 g de filetes de pollo y salpimentamos. Rellenamos el pollo con las verduras pero dejando margen para enrollar los filetes. Hacemos rollitos y los cerramos con 1 palillo. Rebajamos 1 cucharada sopera de mostaza de Dijón u otra que no pique tanto con 1 chorro de aceite y pintamos los rollitos por fuera. Con el horno precalentado, introducimos la bandeja con los rollito, aproximadamente 12 minutos a 180 grados. ",
+    "dificultad": "medio",
+    "tiempo": 35,
+    "calorias": 420,
+    "buscar": "rollitos rellenos pollo verduras aceite de oliva virgen extra pimiento verde cebolla zanahoria mostaza low carb gluten free calabacín cebolla champiñones queso mozzarella rallado huevos bebida soja sal pimienta",
+    "personas": "3",
+    "tipo": "low carb, gluten free"
+  },
+  {
+    "id": 5,
+    "receta": "Ensalada de otoño con boniato",
+    "descripcion": "Ensalada completa para utilizar como plato único. Lavar y picar 1 lechuga de roble. Cocer 1 boniato, una vez cocido trocearlo a rodajas y pasarlo por la plancha para que se tueste un poco. Poner en una bandeja para ensalada la lechuga picada de base y encima repartimos las rodajas de boniato. Añadimos por encima 1 cucharada sopera de pipas de calabaza y 1 cucharada sopera de pasas. Cocemos 3 huevos, los picamos y los añadimos por encima. Troceamos aproximadamente 20 tomates cherry o 1 tomate grande. Aliñamos con 2 cucharadas soperas de aciete, 1 cucharada sopera de vingre de módena, 1 cucharada sopera de agua, sal y pimienta al gusto. El aliño lo preparamos en un bote de cristal, mezclamos todo y añadimos por encima de la ensalada.",
+    "dificultad": "fácil",
+    "tiempo": 20,
+    "calorias": 460,
+    "buscar": "low carb gluten free aceite de oliva virgen extra lechuga roble queso fresco burgos ensalada tomate plancha bacon aguacate huevo",
+    "personas": "3",
+    "tipo": "low carb, gluten free"
+  },
+  {
+    "id": 6,
+    "receta": "Marmitako de merluza",
+    "descripcion": "Picamos 4 dientes de ajo, 2 cebollas y 1 pimiento verde en brunoise y lo ponemos a pochar con un 2 cucharadas soperas de aceite de oliva, una pizca de sal, un poco de perejil en polvo y un chorro de salsa de soja sin gluten. Cuando empeice a dorar, echamos un buen chorro de vino blanco, medio litro de caldo de pescado y medio bote de tomate natural triturado. Trituramos un poco con el turmix para espesar la salsa. Añadimos una zanahoria picada fina, 2 patatas cortadas a trozos y un puñado de guisantes. Cuando a las patatas les queden 10 minutos, metemos 4 lomos de merluza sin espinas y esperamos a que se hagan. Ajustamos de sal, pimienta y perejil al gusto.",
+    "dificultad": "media",
+    "tiempo": 20,
+    "calorias": 500,
+    "buscar": "gluten free sin lactosa aceite de oliva virgen extra ajo cebolla pimiento verde zanahoria guisantes patata merluza vino blanco sal tomate triturado natural caldo de pescado perejil pimienta salsa de soja sin gluten",
+    "personas": "3",
+    "tipo": "sin lactosa, gluten free"
+  }
+]

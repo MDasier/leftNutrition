@@ -1,0 +1,413 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*Estilo fuente */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+/* Estilos generales */
+body {
+    font-family: "Roboto";
+    line-height: 1.6;
+    color: #333;
+}
+
+.header-nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+h2{
+    color: #8DA290;
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+
+h4{
+    text-align: center;
+    color:#333;
+    font-size:1.5rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #8DA290;
+}
+
+a:link{
+    text-decoration: none;
+    color: #8DA290;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #8DA290;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #DEE2D9;
+}
+
+a:active{
+    text-decoration: none;
+    color: #DEE2D9;
+}
+
+/* Sección NAV-EMPRESA */
+#empresa{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* Sección sobre Left Nutrition */
+/* Estilo de la foto de Marina*/
+#foto-nutri{
+    width: 20%;
+    border-radius: 10px;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+#sobre-nosotros{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.sobre-nosotros{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+/* Estilos del encabezado */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos del botón de menú */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-toggle-label {
+    display: none;
+    background: #333;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#alexmusach{
+    color: #333;
+}
+
+.hero-content h2, .hero-content a{
+    color: #fff;
+}
+
+/* Estilos del hero */
+.hero {
+    background: #8DA290;
+    padding: 2rem 0;
+    text-align: center;
+    color:white;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background: #DEE2D9;
+    color: #fff;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: transparent;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.service-item {
+    background: #DEE2D9;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.mail{
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.telf{
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+
+.insta{
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+/* Estilos para las recetas */
+#search{
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#recipe-container {
+    padding: 2rem;
+    background-color: #DEE2D9;
+}
+
+.recipe-container {
+    text-align: right;
+    padding: 2rem;
+    background-color: #DEE2D9;
+    z-index: 0;
+}
+
+.recipe {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recipe h2 {
+    margin-top: 0;
+}
+
+.recipe p {
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.nav a{
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color: #8DA290;
+}
+
+p span{
+    font-size: smaller;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+nav{
+    transition: all 1s ease-in;
+}
+    /* Ocultar el menú en pantallas pequeñas */
+.nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-toggle-checkbox:checked + .menu-toggle-label + .nav ul {
+    display: flex;
+}
+
+.menu-toggle-label {
+    display: block; /* Mostrar el botón de menú en móviles */
+    color: transparent;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 50px;
+}
+
+.menu-toggle-checkbox:checked + .menu-toggle-label {
+    display: block;
+    color: transparent;
+    background-image: url(../images/x.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 50px;
+}
+
+nav ul {
+    display: none; /* Ocultar el menú por defecto en móviles */
+}
+
+nav ul li a:hover{
+    color: #8DA290;
+}
+}
