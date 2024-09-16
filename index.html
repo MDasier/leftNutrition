@@ -7,32 +7,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/galeria.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
     <header class="header-nav">
         <div class="container">
-            <a href="#"><div id="empresa">
-                <img src="./assets/images/LOGO.jpg" alt="logo Left-Nutrition" height="50px">
-                <h1>Left Nutrition</h1>
-            </div></a>
+            <a href="#">
+                <div id="empresa">
+                    <img src="./assets/images/LOGO.jpg" alt="logo Left-Nutrition" height="50px">
+                    <h1>Left Nutrition</h1>
+                </div>
+            </a>
             
 			<input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
-            <label for="menu-toggle" class="menu-toggle-label">☰</label>
+            <label for="menu-toggle" class="menu-toggle-label">.<!--☰--></label>
             <nav class="nav">
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#recetas">Recetas</a></li>
+                    <li><label for="menu-toggle"><a href="#home">Inicio</a></label></li>
+                    <li><label for="menu-toggle"><a href="#about">Sobre Nosotros</a></label></li>
+                    <li><label for="menu-toggle"><a href="#services">Servicios</a></label></li>
+                    <li><label for="menu-toggle"><a href="#contact">Contacto</a></label></li>
+                    <li><label for="menu-toggle"><a href="#recipes">Recetas</a></label></li>
                 </ul>
             </nav>
         </div>
     </header>
-
+    
     <section id="home" class="hero">
+        
         <div class="hero-content">
-            <h2>Bienvenido a Left Nutrition</h2>
+            <!-- <img src="./assets/images/pina.png" width="200px" alt=""> -->
+            <h2><a href="https://www.instagram.com/left.nutrition/" target="_blank"> Bienvenido a Left Nutrition <img src="./assets/images/insta32.svg" alt="instagram logo"></a></h2>
             <p>Mejora tu salud con nuestros planes de nutrición personalizados.
 			Puedes empezar buscando alguna de nuestras <a href="#recetas" class="btn-primary">recetas</a></p>
             
@@ -41,7 +47,7 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2>Sobre Left Nutrition</h2>
+            <h2>Sobre Nosotros</h2>
             <div id="sobre-nosotros">
                 <article class="sobre-nosotros">
                     <img src="./assets/images/nutri.jpg" alt="Foto de Marina, la nutricionista de Left Nutrition" id="foto-nutri">
@@ -69,11 +75,15 @@
                 <h3>Programas de Educación Nutricional</h3>
                 <p>Aprende sobre nutrición y mejora tus hábitos alimenticios.</p>
             </div>
+            <a id="alexmusach" href="https://alexmusach.es/" target="_blank"><div class="service-item">
+                <h3>Programas de Entrenamiento y Fitness - Alex Musach</h3>
+                <p>En el área de salud, nuestro enfoque está en prevenir lesiones, mejorar la postura, reducir molestias, promover el bienestar general y mejorar la condición física.</p>
+            </div></a>
            
         </div>
     </section>
 
-    <section id="recetas" class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Contacto</h2>
             <div class="service-item">
@@ -81,20 +91,25 @@
                 
                 <div class="datos-contacto">
                     <div class="mail">
-                        <img class="logo-contacto" src="./assets/images/email.svg" alt="email logo" height="22px"> 
-                        <span>cortada.marina@gmail.com</span> 
+                        <!-- <img class="logo-contacto" src="./assets/images/email.svg" alt="email logo">  -->
+                        <span>Email: cortada.marina@gmail.com</span> 
                     </div>
                     <div class="telf">
-                        <img  class="logo-contacto" src="./assets/images/whatsapp.svg" alt="whatsapp logo"  height="18px" width="20px"> 
-                        <span>+34 648 01 59 03</span>
+                        <!-- <img  class="logo-contacto" src="./assets/images/whatsapp.svg" alt="whatsapp logo">  -->
+                        <span>Whatsapp: +34 648 01 59 03</span>
                     </div>
+                    <div class="insta">
+                        <!-- <a href="https://www.instagram.com/left.nutrition/" target="_blank"><img src="./assets/images/insta32.svg" alt="instagram logo"></a> -->
+                        <span>Instagram: left.nutrition</span>
+                    </div>
+                    
                 </div>
                 
             </div>
         </div>
     </section>
 
-    <section id="recetas" class="contact">
+    <section id="recipes" class="recipes">
         <div class="container">
             <h2>Recetas</h2>
             <header class="recipe-container">
