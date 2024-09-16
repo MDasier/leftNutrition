@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
               <h4>${recipe.receta}</h4>
               <p><strong>Ingredientes:</strong> ${recipe.ingredientes}</p>
               <p><strong>Instrucciones:</strong> ${recipe.descripcion}</p>
-              <p><strong>Dificultad y tiempo estimado:</strong> ${recipe.dificultad} - ${recipe.tiempo}' 🕢</p>
+              <p><strong>Dificultad:</strong> ${recipe.dificultad} - <strong>Tiempo estimado:</strong> ${recipe.tiempo}' 🕢</p>
+              <p><strong>Raciones:</strong> ${recipe.personas} - <strong>Calorías por ración:</strong> ${recipe.calorias} </p>
               <p><strong>Tipo de receta:</strong> ${recipe.tipo}</p>
-              <p><strong>Raciones:</strong> ${recipe.personas}</p>
           `;
           recipeContainer.appendChild(recipeElement);
       });
@@ -49,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
       displayRecipes(filteredRecipes);
   });
 
+  // Load and display recipes initially
+  fetchRecipes().then(recipes => displayRecipes(recipes));
+});
   // Load and display recipes initially
   fetchRecipes().then(recipes => displayRecipes(recipes));
 });
