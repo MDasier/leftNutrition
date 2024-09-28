@@ -52,6 +52,3 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load and display recipes initially
   fetchRecipes().then(recipes => displayRecipes(recipes));
 });
-  // Load and display recipes initially
-  fetchRecipes().then(recipes => displayRecipes(recipes));
-});
