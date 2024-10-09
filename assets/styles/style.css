@@ -709,3 +709,16 @@ p span{
         color: #8DA290;
     }
 }
+
+/* Fuerza el esquema de colores claro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+}
