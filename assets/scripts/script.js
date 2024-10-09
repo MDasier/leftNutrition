@@ -1,4 +1,27 @@
 // script.js
+window.addEventListener('scroll', function() {
+    const sections = ['home', 'about', 'services', 'contact', 'recipes', 'prozis'];
+    let activeSection = null;
+
+    sections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight/2 && rect.bottom > 50) {
+            activeSection = sectionId; //Si la section está entre el top y el bottom de la ventana (se está viendo)
+        }
+    });
+
+    // Recorre las secciones y si alguna es la que esta activa le cambia el estado
+    sections.forEach(sectionId => {
+        const link = document.getElementById(`a-${sectionId}`);
+        if (sectionId === activeSection) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('search');
@@ -17,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
           return [];
       }
   }
+
 
   function displayRecipes(recipes) {
       recipeContainer.innerHTML = '';

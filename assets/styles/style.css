@@ -81,7 +81,7 @@
   
 
 /* Estilos generales */
-body {
+body,label {
     font-family: "Roboto";
     line-height: 1.6;
     color: #333;
@@ -100,16 +100,42 @@ h2{
     font-weight: bolder;
 }
 
+h3{
+    color: #8DA290;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
 h4{
     text-align: center;
     color:#333;
     font-size:1.5rem;
 }
+#lnInsta:link{
+    text-decoration: none;
+    color: #fff;
+}
 
-.container {
+#lnInsta:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+#lnInsta:hover{
+    text-decoration: none;
+    color: #DEE2D9;
+}
+
+#lnInsta:active{
+    text-decoration: none;
+    color: #DEE2D9;
+}
+.containerLN {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: "Roboto";
+    font-size: 1rem;
 }
 
 a{
@@ -238,12 +264,13 @@ nav ul li a {
     background: #8DA290;
     padding: 2rem 0;
     text-align: center;
-    color:white;
+    color:white;    
 }
 
 .hero-content {
     max-width: 600px;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .hero h2 {
@@ -283,7 +310,75 @@ section h2 {
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 5px;
+    font-size: 1rem;
 }
+
+/* Estilo del contenedor del formulario */
+.contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo de los títulos */
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+/* Estilo de los campos de formulario */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo de los campos al hacer focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Estilo del botón de envío */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efecto hover en el botón */
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del mensaje de error */
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+}
+
 
 .datos-contacto{
     display: flex;
@@ -291,6 +386,7 @@ section h2 {
     justify-content: center;
     font-size: 20px;
     gap: 15px;
+    min-height: 500px;
 }
 
 .mail{
@@ -314,7 +410,7 @@ section h2 {
 }
 /* Estilos para las recetas */
 #search{
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 10px;
     padding-left: 10px;
 }
@@ -367,47 +463,249 @@ nav ul li a:hover{
 p span{
     font-size: smaller;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-nav{
-    transition: all 1s ease-in;
-}
-    /* Ocultar el menú en pantallas pequeñas */
-.nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
+.hero-carousel{
+    margin: 0;
+    padding: 0;
 }
 
-.menu-toggle-checkbox:checked + .menu-toggle-label + .nav ul {
+.accordion-body{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.menu-toggle-label {
-    display: block; /* Mostrar el botón de menú en móviles */
-    color: transparent;
-    background-image: url(../images/menu.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 50px;
-}
-
-.menu-toggle-checkbox:checked + .menu-toggle-label {
-    display: block;
-    color: transparent;
-    background-image: url(../images/x.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 50px;
-}
-
-nav ul {
-    display: none; /* Ocultar el menú por defecto en móviles */
-}
-
-nav ul li a:hover{
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    border-color: #DEE2D9;
     color: #8DA290;
 }
+
+.accordion-button:focus {
+    z-index: 0;
+    border-color: #8DA290;
+    outline: 0;
+    color: #8DA290;
+    font-weight: bold;
+    box-shadow: 0 0 0 .25rem #DEE2D9;
+}
+/* Estilo para el contenedor de la tarjeta */
+.card {
+    overflow: hidden; /* Oculta cualquier desbordamiento de la imagen */
+    border-radius: 8px; /* Opcional: redondear esquinas */    
+}
+
+/* Imagen dentro de la tarjeta */
+.prozisImg {
+    transition: transform 0.3s ease-in-out; /* Transición suave para el zoom */
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo */
+    display: block;
+}
+
+/* Zoom in: Agranda la imagen al hacer hover */
+.card:hover .prozisImg {
+    transform: scale(1.1); /* Aplica un zoom del 10% */
+}
+
+.card:hover{
+    font-weight: bold;
+}
+
+.card a:link{
+    color: #333;
+}
+
+.card a:visited{
+    color: #333;
+}
+
+.card a:hover{
+    color: #333;
+}
+
+.card a:active{
+    color: #333;
+}
+/* espacio para poder centrar las secciones en pantalla cuando se llega a traves de anchor*/
+#home,#about,#services,#recipes,#contact,#prozis{
+    padding-top: 150px;
+}
+
+/* SELECCIONAR EL A DE CADA SECCION EN EL NAV AL SER 'ACTIVADA' LA SECTION */
+#a-home.active,#a-about.active,#a-services.active,#a-contact.active,#a-recipes.active,#a-prozis.active{
+    border-radius: 5px;
+    /*border-top: #8DA290 2px solid;
+    border-bottom: #8DA290 2px solid;*/
+    background-color: #8DA290;
+    padding: 2px 0;
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 1200px) {/*mediano*/
+
+    .card{
+        max-width: 200px;
+        font-size: 12px;
+    }
+
+    #home,#about,#services,#recipes,#contact,#prozis{
+        padding-top: 130px;
+    }
+
+    nav{
+        transition: all 1s ease-in;
+    }
+    
+    /* Ocultar el menú en pantallas pequeñas */
+    /*.nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .nav ul {
+        display: flex;
+    }
+
+    .menu-toggle-label {
+        display: block; /* Mostrar el botón de menú en móviles *//*
+        color: transparent;
+        background-image: url(../images/menu.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 50px;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label {
+        display: block;
+        color: transparent;
+        background-image: url(../images/x.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 50px;
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú por defecto en móviles *//*
+    }
+
+    nav ul li a:hover{
+        color: #8DA290;
+    }*/
+}
+
+@media (max-width: 990px) {/*pequeño*/
+    .contact-form {
+        padding: 20px;
+    }
+
+    .card{
+        max-width: 150px;
+        font-size: 10px;
+    }
+
+    #home,#about,#services,#recipes,#contact,#prozis{
+        padding-top: 80px;
+    }
+
+    nav{
+        transition: all 1s ease-in;
+    }
+
+    /* Ocultar el menú en pantallas pequeñas */
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .nav ul {
+        display: flex;
+    }
+
+    .menu-toggle-label {
+        display: block; /* Mostrar el botón de menú en móviles */
+        color: transparent;
+        background-image: url(../images/menu.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 50px;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label {
+        display: block;
+        color: transparent;
+        background-image: url(../images/x.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 50px;
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú por defecto en móviles */
+    }
+
+    nav ul li a:hover{
+        color: #8DA290;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes para tablets pequeñas y móviles grandes */
+    .contact-form {
+        padding: 20px;
+    }
+
+    .card{
+        max-width: 100px;
+        font-size: 8px;
+    }
+
+    #home,#about,#services,#recipes,#contact,#prozis{
+        padding-top: 80px;
+    }
+
+    nav{
+        transition: all 1s ease-in;
+    }
+
+    /* Ocultar el menú en pantallas pequeñas */
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .nav ul {
+        display: flex;
+    }
+
+    .menu-toggle-label {
+        display: block; /* Mostrar el botón de menú en móviles */
+        color: transparent;
+        background-image: url(../images/menu.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 50px;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label {
+        display: block;
+        color: transparent;
+        background-image: url(../images/x.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 50px;
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú por defecto en móviles */
+    }
+
+    nav ul li a:hover{
+        color: #8DA290;
+    }
 }

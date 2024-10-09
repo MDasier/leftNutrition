@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/galeria.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
     <header class="header-nav">
-        <div class="container">
+        <div class="containerLN">
             <a href="#">
                 <div id="empresa">
                     <img src="./assets/images/LOGO.jpg" alt="logo Left-Nutrition" height="50px">
@@ -24,29 +24,52 @@
             <label for="menu-toggle" class="menu-toggle-label">.<!--☰--></label>
             <nav class="nav">
                 <ul>
-                    <li><label for="menu-toggle"><a href="#home">Inicio</a></label></li>
-                    <li><label for="menu-toggle"><a href="#about">Sobre Nosotros</a></label></li>
-                    <li><label for="menu-toggle"><a href="#services">Servicios</a></label></li>
-                    <li><label for="menu-toggle"><a href="#contact">Contacto</a></label></li>
-                    <li><label for="menu-toggle"><a href="#recipes">Recetas</a></label></li>
+                    <li><label for="menu-toggle"><a id="a-home" href="#home">Inicio</a></label></li>
+                    <li><label for="menu-toggle"><a id="a-about" href="#about">Sobre Nosotros</a></label></li>
+                    <li><label for="menu-toggle"><a id="a-services" href="#services">Servicios</a></label></li>
+                    <li><label for="menu-toggle"><a id="a-contact" href="#contact">Contacto</a></label></li>
+                    <li><label for="menu-toggle"><a id="a-recipes" href="#recipes">Recetas</a></label></li>
+                    <li><label for="menu-toggle"><a id="a-prozis" href="#prozis">Prozis</a></label></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <section id="home" class="hero">
-        
+    <section class="hero-carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="8000">
+                <img src="./assets/images/prueba.png" class="d-flex w-100" alt="Left-Nutrition logo">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./assets/images/alex.png" class="d-block w-100" alt="Alex Musach personal trainer">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./assets/images/prozis.png" class="d-block w-100" alt="recomendados Prozis">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <section id="home" class="hero">        
         <div class="hero-content">
-            <!-- <img src="./assets/images/pina.png" width="200px" alt=""> -->
-            <h2><a href="https://www.instagram.com/left.nutrition/" target="_blank"> Bienvenido a Left Nutrition <img src="./assets/images/insta32.svg" alt="instagram logo"></a></h2>
+            <h2> Bienvenido a <a id="lnInsta" href="https://www.instagram.com/left.nutrition/" target="_blank"  data-toggle="tooltip" data-placement="top" title="Vamos a Instagram!"> Left Nutrition </button></a></h2>
             <p>Mejora tu salud con nuestros planes de nutrición personalizados.
-			Puedes empezar buscando alguna de nuestras <a href="#recetas" class="btn-primary">recetas</a></p>
+			Puedes empezar buscando alguna de nuestras <a href="#recipes" class="btn-primary">recetas</a></p>
             
         </div>
     </section>
 
     <section id="about" class="about">
-        <div class="container">
+        <div class="containerLN">
             <h2>Sobre Nosotros</h2>
             <div id="sobre-nosotros">
                 <article class="sobre-nosotros">
@@ -54,14 +77,14 @@
                     <blockquote>Hola!👋 Soy Marina Cortada, creadora de Left Nutrition.</blockquote>
                 </article>                
                 
-                <p>Left.nutrition es un proyecto de nutrición que cree en los cambios, en los hábitos saludables y en el constante aprendizaje.
+                <p>Left Nutrition es un proyecto de nutrición que cree en los cambios, en los hábitos saludables y en el constante aprendizaje.
                 La alimentación influye en el equilibrio de nuestro cuerpo, una gestión consciente de ella conjuntamente con el ejercicio físico son una herramienta imprescindible para conseguir una calidad de vida óptima. Left.nutrition nació para ayudar a aquellos que opten por esta filosofía de vida.</p>
             </div>			
         </div>
     </section>
 
     <section id="services" class="services">
-        <div class="container">
+        <div class="containerLN">
             <h2>Nuestros Servicios</h2>
             <div class="service-item">
                 <h3>Plan de Nutrición Personalizado</h3>
@@ -84,36 +107,22 @@
     </section>
 
     <section id="contact" class="contact">
-        <div class="container">
+        <div class="containerLN">
             <h2>Contacto</h2>
             <div class="service-item">
-                <h3>Pide más información o aclara tus dudas mandándonos un email o escribiéndonos a: </h3>
-                
+                <h3>Pide más información y aclara tus dudas con el siguiente formulario o escribiéndonos por  <a  href="https://www.instagram.com/left.nutrition/" target="_blank"  data-toggle="tooltip" data-placement="top" title="Vamos a Instagram!">Instagram</a></h3>                
                 <div class="datos-contacto">
-                    <div class="mail">
-                        <!-- <img class="logo-contacto" src="./assets/images/email.svg" alt="email logo">  -->
-                        <span>Email: cortada.marina@gmail.com</span> 
-                    </div>
-                    <div class="telf">
-                        <!-- <img  class="logo-contacto" src="./assets/images/whatsapp.svg" alt="whatsapp logo">  -->
-                        <span>Whatsapp: +34 648 01 59 03</span>
-                    </div>
-                    <div class="insta">
-                        <!-- <a href="https://www.instagram.com/left.nutrition/" target="_blank"><img src="./assets/images/insta32.svg" alt="instagram logo"></a> -->
-                        <span>Instagram: left.nutrition</span>
-                    </div>
-                    
-                </div>
-                
+                  <iframe class="datos-contacto" src="https://docs.google.com/forms/d/e/1FAIpQLSfOzXn8PTRLzMbkVNh71yIFzAgR4VijAxguRbSGWs9kiDmG5A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando formulario…</iframe>             
+                </div>                
             </div>
         </div>
     </section>
 
     <section id="recipes" class="recipes">
-        <div class="container">
+        <div class="containerLN">
             <h2>Recetas</h2>
             <header class="recipe-container">
-                <input type="text" id="search" placeholder="...qué estás buscando?">
+                <label for="search" class="recipes">Puedes buscar recetas, ingredientes... <input type="text" id="search" placeholder="...qué estás buscando?"></label>
             </header>
             
             <main>
@@ -122,13 +131,207 @@
         </div>
     </section>
 
+    <section id="prozis" class="prozis">
+        <div class="containerLN">
+            <h2>Nuestros favoritos de Prozis!</h2>
+            <h4>Recuerda usar el código 'MUSACH' para conseguir regalos y descuentos.</h4>
+            <div class="accordion accordion-flush" id="accordionExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Cereales y derivados
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <!---->
+                        <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/copos-de-avena-copos-finos-1000-g" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/images/prozis/oatFlakes.jpeg" class="card-img-top prozisImg" alt="Pistachios">
+                          <div class="card-body">
+                            <p class="card-text">Copos de avena</p>
+                          </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/arroz-de-konjac-270-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/konjacRice.jpeg" class="card-img-top prozisImg" alt="Pistachios">
+                        <div class="card-body">
+                          <p class="card-text">Arroz de konjac</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/harina-de-coco-500g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/coconutFlour.jpeg" class="card-img-top prozisImg" alt="Harina de coco">
+                        <div class="card-body">
+                          <p class="card-text">Harina de coco</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Snacks y Proteínas
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"> 
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/pistachos-crudos-pelados-150-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/pistachios.jpeg" class="card-img-top prozisImg" alt="Pistachios">
+                        <div class="card-body">
+                          <p class="card-text">Pistachos crudos</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/anacardos-200-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/cashews.jpeg" class="card-img-top prozisImg" alt="Anacardos crudos">
+                        <div class="card-body">
+                          <p class="card-text">Anacardos crudos</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/crema-de-pistacho-250-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/pistachioButter.jpeg" class="card-img-top prozisImg" alt="Pistachios">
+                        <div class="card-body">
+                          <p class="card-text">Crema de pistacho</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/crema-de-avellanas-cremosa-250-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/hazelnutButter.jpeg" class="card-img-top prozisImg" alt="Crema de avellanas">
+                        <div class="card-body">
+                          <p class="card-text">Crema de avellana</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/crema-de-anacardos-250-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/cashewButter.jpeg" class="card-img-top prozisImg" alt="Crema de anacardos">
+                        <div class="card-body">
+                          <p class="card-text">Crema de anacardo</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/crema-de-almendras-250-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/almondButter.jpeg" class="card-img-top prozisImg" alt="Crema de almendra">
+                        <div class="card-body">
+                          <p class="card-text">Crema de almendra</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/proteina-vegetal-freaking-good-900-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/peanutProtein.jpeg" class="card-img-top prozisImg" alt="Peanut butter Protein">
+                        <div class="card-body">
+                          <p class="card-text">Proteína de crema de cacahuete</p>
+                        </div></a>
+                      </div>
+                      <!---->
+
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/100-proteina-vegana-900-g" target="_blank" rel="noopener noreferrer"></a>
+                        <img src="./assets/images/prozis/veganProtein.jpeg" class="card-img-top prozisImg" alt="Vegan Protein">
+                        <div class="card-body">
+                          <p class="card-text">Proteína vegana neutra</p>
+                        </div>
+                      </div>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Comodines de comida
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/100-pechuga-de-pollo-premium-al-natural-155-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/chickenBreast.jpeg" class="card-img-top prozisImg" alt="Pechuga de pollo embasada">
+                        <div class="card-body">
+                          <p class="card-text">Pechuga de pollo al natural</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                      <!---->
+                      <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/sardinas-sin-piel-ni-espinas-en-aceite-de-oliva-virgen-extra-organico-con-chile-120-g" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/prozis/sardines.jpeg" class="card-img-top prozisImg" alt="Pechuga de pollo embasada">
+                        <div class="card-body">
+                          <p class="card-text">Sardinas sin piel ni espinas - En AOVE con chile</p>
+                        </div></a>
+                      </div>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Suplementos y vitaminas
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body"> 
+                        <!---->
+                        <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/vitamin-d3-2000-iu-120-softgels" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/images/prozis/vitaminaD3.jpeg" class="card-img-top prozisImg" alt="Vitamina D3 2000 IU">
+                          <div class="card-body">
+                            <p class="card-text">Vitamina D3</p>
+                          </div></a>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/cascara-de-psyllium-1000-mg-60-capsulas-vegetarianas" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/images/prozis/psyllium.jpeg" class="card-img-top prozisImg" alt="Vitamina D3 2000 IU">
+                          <div class="card-body">
+                            <p class="card-text">Psyllium husk</p>
+                          </div></a>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/omega-3-epa-plus-90-softgels" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/images/prozis/omega3.jpeg" class="card-img-top prozisImg" alt="Vitamina D3 2000 IU">
+                          <div class="card-body">
+                            <p class="card-text">Omega 3 EPA PLUS</p>
+                          </div></a>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="card" style="width: 18rem;"><a href="https://www.prozis.com/es/es/prozis/te-verde-egcg-600-mg-100-capsulas" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/images/prozis/greenTea.jpeg" class="card-img-top prozisImg" alt="Vitamina D3 2000 IU">
+                          <div class="card-body">
+                            <p class="card-text">Green tea</p>
+                          </div></a>
+                        </div>
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+            </div><!--Cierre acordeon-->
+            
+        </div>
+    </section>
     <footer>
-        <div class="container">
+        <div class="containerLN">
             <p>&copy; 2024 Left Nutrition. Todos los derechos reservados.</p>
             <p><span>web by <a href="https://www.linkedin.com/in/asiermd/">mdasier</a></span></p>
         </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
